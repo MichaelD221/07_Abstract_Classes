@@ -22,16 +22,20 @@ public class App {
         output("Diff. c-t :" + areaDiff(circle, triangle));
         output("Diff. t-t :" + areaDiff(triangle, triangle));
 
+    
+        /* Das geht jetzt nicht mehr ... Abstraktion */ 
+        // Shape shape = new Shape();
+
     }
 
-        /* 1. Iteration : ggf. 1000x überladen */ 
-        private static double areaDiff(Rectangle r, Triangle t){
-            return r.area() - t.area();
-        }
+        // /* 1. Iteration : ggf. 1000x überladen */ 
+        // private static double areaDiff(Rectangle r, Triangle t){
+        //     return r.area() - t.area();
+        // }
 
-        private static double areaDiff(Rectangle r, Circle c){
-            return r.area() - c.area();
-        }
+        // private static double areaDiff(Rectangle r, Circle c){
+        //     return r.area() - c.area();
+        // }
 
         /* 2. Iteration: Polymorphie - besser! */  
         private static double areaDiff(Shape s1, Shape s2){
